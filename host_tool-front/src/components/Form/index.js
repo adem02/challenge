@@ -3,10 +3,15 @@ import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
 const FormInput = props => {
+    // && data.endDate.getYear() > data.startDate.getYear()
 
     const { data, handleChange, handleSubmit, title, handleStartDate, handleEndtDate, startDate, endDate } = props;
 
-    const btn = data.project_name !== '' && data.domain_name !== '' && data.username !== '' && data.super_admin_password !== '' && data.admin_password !== '' && endDate.getYear() > startDate.getYear() ?
+    React.useEffect(() => {
+
+    }, [startDate, endDate])
+
+    const btn = data.project_name !== '' && data.domain_name !== '' && data.username !== '' && data.super_admin_password !== '' && data.admin_password !== '' && startDate.getFullYear() < endDate.getFullYear() ?
         <button type="submit" className="btn btn-warning">SUBMIT<span className="material-icons" style={{ paddingLeft: '5px', height: '100%', verticalAlign: 'middle', fontStyle: 'italic' }}>send</span></button> :
         <button type="submit" className="btn btn-danger" disabled>SUBMIT<span className="material-icons" style={{ paddingLeft: '5px', height: '100%', verticalAlign: 'middle', fontStyle: 'italic' }}>send</span></button>
 

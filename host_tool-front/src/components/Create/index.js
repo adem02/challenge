@@ -40,7 +40,7 @@ const CreateProject = () => {
             username: username,
             admin_password: admin_password,
             super_admin_password: super_admin_password,
-            starttDate: startDate,
+            startDate: startDate,
             endDate: endDate
         }).then(() => {
             setProjectData(emptyData);
@@ -61,8 +61,6 @@ const CreateProject = () => {
                     <ul className="list-unstyled mt-3 mb-4">
                         <li>10 GB of storage</li>
                         <li>Priority email support</li>
-                        <li>Priority email support</li>
-                        <li>Help center access</li>
                     </ul>
                 </div>
             </div>

@@ -1,9 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import '../styles/header.css'
+import { FirebaseContext } from '../Firebase';
 import hdimg from '../../images/humanity-diapo-img.jpg'
 
 const Header = () => {
+
+    const firebase = React.useContext(FirebaseContext);
+    const history = useHistory();
+
+    const handleClick = () => {
+        firebase.logOut();
+        history.push('/');
+    }
+
     return (
         <div className="container-fluid">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,7 +30,7 @@ const Header = () => {
                             <Link className="nav-link" to="/projects-list">Projects</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Sign out</Link>
+                            <p className="nav-link" style={{ cursor: 'pointer' }} onClick={handleClick}>Sign out</p>
                         </li>
                     </ul>
                 </div>

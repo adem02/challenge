@@ -16,14 +16,13 @@ class Firebase {
         app.initializeApp(config);
         this.database = app.firestore();
         this.auth = app.auth();
-
     }
 
     project_ref = () => this.database.collection('projects');
 
     signIn = (email, password) => this.auth.signInWithEmailAndPassword(email, password);
 
-    signOut = () => this.auth.signOut();
+    logOut = () => this.auth.signOut();
 }
 
 export default Firebase;
