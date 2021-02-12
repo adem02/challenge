@@ -1,0 +1,100 @@
+1 - Page de creation de projet
+2 - page permettant de modidifer ou supprimer l'ensemble des informations d'un projet
+3 - page listant les projets hébergés avec filtres
+4 - Message d'alerte 
+0 - page de connexion
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCnS86lhoaeTlHm_pk2UihAcMHufaSnt0M",
+    authDomain: "hostit-6862f.firebaseapp.com",
+    projectId: "hostit-6862f",
+    storageBucket: "hostit-6862f.appspot.com",
+    messagingSenderId: "961515998228",
+    appId: "1:961515998228:web:f791f1705ddcb1ed94eb01"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+{/* <form className="form-style" onSubmit={handleSubmit}>
+
+
+
+            <h2 className="text-center mb-4">Create and Host your project</h2>
+
+            <div className="form-group row">
+                <label className="col-md control-label"><b>Project name</b></label>
+                <div className="col-md">
+                    <div className="input-group">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text material-icons">folder</span>
+                        </div>
+                        <input name="project_name" placeholder="Your project name" className="form-control" type="text" onChange={handleChange} value={project_name} />
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="form-group row">
+                <label className="col-md control-label"><b>Domaine name</b></label>
+                <div className="col-md inputGroupContainer">
+                    <div className="input-group">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text material-icons">language</span>
+                        </div>
+                        <input name="domain_name" placeholder="Your Domain name" className="form-control" type="text" onChange={handleChange} value={domain_name} />
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="form-group row">
+                <label className="col-md control-label"><b>Username</b></label>
+                <div className="col-md inputGroupContainer">
+                    <div className="input-group">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text material-icons">person</span>
+                        </div>
+                        <input name="username" placeholder="Username" className="form-control" type="text" onChange={handleChange} value={username} />
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="form-group row">
+                <label className="col-md control-label" ><b>Admin password</b></label>
+                <div className="col-md inputGroupContainer">
+                    <div className="input-group">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text material-icons">lock</span>
+                        </div>
+                        <input name="admin_password" placeholder="Type password for admin" className="form-control" type="password" onChange={handleChange} value={admin_password} />
+                    </div>
+                </div>
+            </div>
+
+            <div className="form-group row">
+                <label className="col-md control-label"><b>Super Admin Password</b></label>
+                <div className="col-md inputGroupContainer">
+                    <div className="input-group">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text material-icons">lock</span>
+                        </div>
+                        <input name="super_admin_password" placeholder="Type password for super admin" className="form-control" type="password" onChange={handleChange} value={super_admin_password} />
+                    </div>
+                </div>
+            </div>
+
+            <div className="d-flex justify-content-center mt-4 mb-5">
+                {btn}
+            </div>
+        </form> */}
